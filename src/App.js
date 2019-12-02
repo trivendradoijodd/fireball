@@ -58,6 +58,7 @@ function App() {
               style={{ margin: "0 auto" }}
             >
               <div className="blog-comments__avatar">
+                <a href="http://www.sahyadrifarms.com">
                 <img
                   style={{
                     width: "6.125rem",
@@ -66,6 +67,7 @@ function App() {
                   src="./images/sahyadri_logo.png"
                   alt="User avatar"
                 />
+                </a>
               </div>
               <div className="blog-comments__content"></div>
             </div>
@@ -143,6 +145,9 @@ function App() {
                       <button
                         type="button"
                         className="mb-2 btn btn-sm btn-success mr-1"
+                        onClick={()=>{
+                          window.location.href='https://www.google.com/maps/search/?api=1&query=20.1045 73.8913'
+                        }}
                       >
                         <i className="material-icons">gps_fixed</i>&nbsp; Locate
                       </button>
